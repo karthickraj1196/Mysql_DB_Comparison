@@ -5,9 +5,9 @@ import pandas as pd
 
 
 
-qadb = mysql.connector.connect(host='192.168.85.61',user='root',password='Q@r00T',port='3400')
-uatdb = mysql.connector.connect(host='10.10.10.231',user='root',password='1#wsXnji9~',port='3401')
-sql = "SELECT OWNER_ID, RULEFILE_LOCATION, ACTIVE FROM solartissysconfigdbV3.CNF_KNOWLEDGE_BASE_DETAIL WHERE OWNER_ID = '507';"
+qadb = mysql.connector.connect(host='host1',user='user',password='password',port='port1')
+uatdb = mysql.connector.connect(host='host2',user='root',password='password',port='port2')
+sql = "Your_Query"
 
 qadf = pd.read_sql(sql,qadb)
 uatdf = pd.read_sql(sql,uatdb)
