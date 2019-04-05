@@ -1,6 +1,6 @@
 #########file Compraison
 import mysql.connector
-import xlrd
+#import xlrd
 import pandas as pd
 
 
